@@ -25,7 +25,7 @@ Lazzat (لذّت) — Urdu for *taste* — is a full-stack web application built
 - 🍽️ **Recipe Discovery** — 150+ Pakistani recipes from TheMealDB & Spoonacular APIs
 - 📅 **Weekly Meal Planner** — 7-day interactive planner with breakfast, lunch & dinner slots
 - 🛒 **Smart Grocery List** — Auto-generated from meal plan with PDF export
-- 🤖 **Lazzat AI** — 4-in-1 assistant (recipes, meal plans, ingredients, nutrition) powered by Groq
+- 🤖 **Lazzat AI** — 4-in-1 assistant (recipes, meal plans, ingredients, nutrition) powered by Gemini
 - 🔐 **Secure Auth** — Laravel session-based login & registration with bcrypt
 - 🌐 **Bilingual** — Full English & Urdu with right-to-left text support
 
@@ -35,11 +35,11 @@ Lazzat (لذّت) — Urdu for *taste* — is a full-stack web application built
 
 | Home Page | Recipes Page |
 |-----------|-------------|
-| ![Home](screenshots/home.png) | ![Recipes](screenshots/recipes.png) |
+| ![Home](screenshots/herol.PNG) | ![Recipes](screenshots/recepi.PNG) |
 
 | Dashboard | Meal Planner |
 |-----------|-------------|
-| ![Dashboard](screenshots/dashboard.png) | ![Planner](screenshots/planner.png) |
+| ![Dashboard](screenshots/das1.PNG) | ![Planner](screenshots/mealplanner.PNG) |
 
 ---
 
@@ -51,7 +51,7 @@ Lazzat (لذّت) — Urdu for *taste* — is a full-stack web application built
 | Database | SQLite 3 |
 | Frontend | Blade Templates, Vanilla JavaScript, Custom CSS |
 | Recipe APIs | TheMealDB API, Spoonacular API |
-| AI API | Groq API (Llama 3.3-70B) |
+| AI API | Gemni API (Llama 3.3-70B) |
 | Auth | Laravel Session Auth, bcrypt |
 
 ---
