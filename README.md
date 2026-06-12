@@ -1,59 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/images/hero.png" width="120" alt="Lazzat Logo">
 </p>
 
-## About Laravel
+<h1 align="center">Lazzat (لذّت)</h1>
+<p align="center">Pakistani Recipe Discovery & Meal Planning Web Application</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-11.x-red?style=flat-square&logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-8.2-blue?style=flat-square&logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/Database-SQLite-green?style=flat-square" alt="SQLite">
+  <img src="https://img.shields.io/badge/AI-Groq%20Llama%203.3-orange?style=flat-square" alt="Groq">
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About Lazzat
 
-## Learning Laravel
+Lazzat (لذّت) — Urdu for *taste* — is a full-stack web application built for Pakistani users to discover traditional recipes, plan weekly meals, manage grocery lists, and get AI-powered cooking assistance. It supports full **English and Urdu (RTL)** bilingual operation.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Features
 
-## Laravel Sponsors
+- 🍽️ **Recipe Discovery** — 150+ Pakistani recipes from TheMealDB & Spoonacular APIs
+- 📅 **Weekly Meal Planner** — 7-day interactive planner with breakfast, lunch & dinner slots
+- 🛒 **Smart Grocery List** — Auto-generated from meal plan with PDF export
+- 🤖 **Lazzat AI** — 4-in-1 assistant (recipes, meal plans, ingredients, nutrition) powered by Groq
+- 🔐 **Secure Auth** — Laravel session-based login & registration with bcrypt
+- 🌐 **Bilingual** — Full English & Urdu with right-to-left text support
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## Screenshots
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+| Home Page | Recipes Page |
+|-----------|-------------|
+| ![Home](screenshots/home.png) | ![Recipes](screenshots/recipes.png) |
 
-## Contributing
+| Dashboard | Meal Planner |
+|-----------|-------------|
+| ![Dashboard](screenshots/dashboard.png) | ![Planner](screenshots/planner.png) |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Tech Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Layer | Technology |
+|-------|-----------|
+| Backend | Laravel 11, PHP 8.2 |
+| Database | SQLite 3 |
+| Frontend | Blade Templates, Vanilla JavaScript, Custom CSS |
+| Recipe APIs | TheMealDB API, Spoonacular API |
+| AI API | Groq API (Llama 3.3-70B) |
+| Auth | Laravel Session Auth, bcrypt |
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Installation
 
-## License
+```bash
+git clone https://github.com/Muniba-ishfaq33/lazzat.git
+cd lazzat
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Add these to your `.env` file:
+```env
+Gemini Api Key_API_KEY=AIzaSyAaLfs9WbhIoy0pX3mnYJNhszCigRRuh5w
+Gemini_MODEL=gemini-2.5-flash
+SPOONACULAR_KEY=your_spoonacular_key_here
+```
+
+Open `http://localhost:8000` in your browser.
+
+---
+
+## Project Info
+
+**Course:**  Web Technologies  
+**University:** COMSATS University Islamabad, Vehari Campus  
+**Student:** Muniba Ishfaq — SP24-BSSE-024/VHR  
+**Instructor:** Yasmeen Jana  
+**Semester:** Spring 2026
