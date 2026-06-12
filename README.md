@@ -70,7 +70,7 @@ php artisan serve
 
 Add these to your `.env` file:
 ```env
-Gemini Api Key_API_KEY=AIzaSyAaLfs9WbhIoy0pX3mnYJNhszCigRRuh5w
+Gemini Api Key_API_KEY=your_api_key_here
 Gemini_MODEL=gemini-2.5-flash
 SPOONACULAR_KEY=your_spoonacular_key_here
 ```
