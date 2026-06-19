@@ -54,6 +54,8 @@ Lazzat (لذّت) — Urdu for *taste* — is a full-stack web application built
 |Dashboard|
 
  | ![Dashbaord-Englis-Urdu]([https://github.com/user-attachments/assets/82b12aac-fc31-42ac-be8f-f0ba61e9e152)
+ 
+https://github.com/user-attachments/assets/82b12aac-fc31-42ac-be8f-f0ba61e9e152
 
 ## Tech Stack
 
