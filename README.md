@@ -39,7 +39,7 @@ Lazzat (لذّت) — Urdu for *taste* — is a full-stack web application built
 
 | recipes-ingredient | grocerylist |
 |-----------|-------------|
-| ![Recepi Detail](screenshots/rIng.PNG) | ![Groccery List ](screenshotsgrocerylist.PNG) |
+| ![Recepi Detail](screenshots/rIng.PNG) | ![Groccery List ](screenshots/grocerylist.PNG) |
 | grocery-print |Ai |
 |-----------|-------------|
 | ![Print Page](screenshotsprint.PNG) | ![ai-urdu-response](screenshots/Ai2.PNG) |
